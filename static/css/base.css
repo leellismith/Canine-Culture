@@ -56,6 +56,10 @@ body {
     border: 1px solid black !important;
 }
 
+.nav-bar-margin {
+    margin-bottom: 0px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
