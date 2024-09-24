@@ -1,0 +1,16 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "DT-001",
+        "name": "KONG Classic Dog Toy, Large",
+        "description": "The KONG Classic is the go-to toy for dogs who love to chew and play. Made from durable natural rubber, it offers an unpredictable bounce to keep your dog entertained. Ideal for stuffing with treats, it helps relieve boredom and anxiety. Available in various sizes, it's perfect for any dog and keeps them engaged and happy.",
+        "price": 12.99,
+        "category": 1,
+        "rating": 4.5,
+        "image_url": "https://m.media-amazon.com/images/I/61WFOz9XtoL._AC_SL1500_.jpg",
+        "image": "kong_classic.jpg"
+      }
+    }
+  ]
