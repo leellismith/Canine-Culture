@@ -1,16 +1,128 @@
 [
-    {
-      "pk": 1,
-      "model": "products.product",
-      "fields": {
-        "sku": "DT-001",
-        "name": "KONG Classic Dog Toy, Large",
-        "description": "The KONG Classic is the go-to toy for dogs who love to chew and play. Made from durable natural rubber, it offers an unpredictable bounce to keep your dog entertained. Ideal for stuffing with treats, it helps relieve boredom and anxiety. Available in various sizes, it's perfect for any dog and keeps them engaged and happy.",
-        "price": 12.99,
-        "category": 1,
-        "rating": 4.5,
-        "image_url": "https://m.media-amazon.com/images/I/61WFOz9XtoL._AC_SL1500_.jpg",
-        "image": "kong_classic.jpg"
-      }
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "DT-001",
+      "name": "KONG Classic Dog Toy, Large",
+      "description": "The KONG Classic is the go-to toy for dogs who love to chew and play. Made from durable natural rubber, it offers an unpredictable bounce to keep your dog entertained. Ideal for stuffing with treats, it helps relieve boredom and anxiety. Available in various sizes, it's perfect for any dog and keeps them engaged and happy.",
+      "price": 12.99,
+      "category": 1,
+      "rating": 4.5,
+      "image_url": "https://m.media-amazon.com/images/I/61WFOz9XtoL._AC_SL1500_.jpg",
+      "image": "kong_classic.jpg"
     }
-  ]
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "DT-002",
+      "name": "Unibos Dog Ball Thrower",
+      "description": "Keep your dog active and entertained with the Unibos Dog Ball Thrower. Designed for effortless, long-distance throws, it helps your dog burn off energy while having fun. Lightweight and easy to use, it's perfect for park or backyard play. Includes a durable tennis ball to get the game started right away!",
+      "price": 6.35,
+      "category": 2,
+      "rating": 4.2,
+      "image_url": "https://m.media-amazon.com/images/I/415nf6HZLCL._AC_SL1200_.jpg",
+      "image": "unibos_dog_ball_thrower.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "DT-003",
+      "name": "LUKITO Dog Puzzle Toy",
+      "description": "Keep your dog active and entertained with the Unibos Dog Ball Thrower. Designed for effortless, long-distance throws, it helps your dog burn off energy while having fun. Lightweight and easy to use, it's perfect for park or backyard play. Includes a durable tennis ball to get the game started right away!",
+      "price": 18.99,
+      "category": 3,
+      "rating": 4.5,
+      "image_url": "https://m.media-amazon.com/images/I/71payp0E5qL._AC_SL1500_.jpg",
+      "image": "lukito_dog_puzzle.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "DT-004",
+      "name": "Pet Training Clicker with Wrist Strap",
+      "description": "Train your pet effectively with the Pet Training Clicker. Its simple design delivers a clear, consistent sound to reinforce positive behavior. The attached wrist strap keeps it handy during training sessions, making it perfect for use at home or on the go. A must-have tool for obedience training!",
+      "price": 3.99,
+      "category": 4,
+      "rating": 4.3,
+      "image_url": "https://m.media-amazon.com/images/I/81Z+2HP0YVL._AC_SL1500_.jpg",
+      "image": "pet_training_clicker.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "DT-005",
+      "name": "TDL Gun Dog Training Whistle with Lanyard",
+      "description": "Master obedience training with the TDL Gun Dog Training Whistle. Designed for clear, consistent sound, it’s ideal for long-distance commands. The included lanyard keeps the whistle secure and easily accessible during outdoor training sessions. Perfect for professional dog training or everyday use.",
+      "price": 5.99,
+      "category": 4,
+      "rating": 4.4,
+      "image_url": "https://m.media-amazon.com/images/I/71u2Kmu13UL._AC_SL1500_.jpg",
+      "image": "pet_training_clicker.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "DT-006",
+      "name": "Snuffle Mat",
+      "description": "Keep your dog engaged and mentally stimulated with the Snuffle Mat. Designed to mimic grass, it encourages natural foraging instincts as your dog hunts for hidden treats. Perfect for slowing down fast eaters or providing enrichment, this durable mat offers hours of interactive fun and reduces boredom.",
+      "price": 11.99,
+      "category": 6,
+      "rating": 5,
+      "image_url": "https://m.media-amazon.com/images/I/61zdZIbiiFL._AC_SL1500_.jpg",
+      "image": "snuffle_mat.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "DT-007",
+      "name": "Don Pet Dog Collar",
+      "description": "The Don Pet Dog Collar combines comfort and durability for everyday wear. Made from high-quality materials, it's adjustable for a secure and comfortable fit. Perfect for all breeds, this collar is both stylish and sturdy, ensuring your dog stays safe while looking great.",
+      "price": 5.99,
+      "category": 7,
+      "rating": 4.4,
+      "image_url": "https://m.media-amazon.com/images/I/51dO6ZgAHTL._AC_.jpg",
+      "image": "don_collar.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "DT-008",
+      "name": "Truelove Dog Leash",
+      "description": "The Truelove Dog Leash is designed for both comfort and control during walks. Made from durable, high-quality materials, it features a padded handle for a comfortable grip. With reflective stitching for added safety in low light, this leash is perfect for daily adventures with your dog.",
+      "price": 14.99,
+      "category": 7,
+      "rating": 4.6,
+      "image_url": "https://m.media-amazon.com/images/I/61OG4f6yyvL._AC_SL1500_.jpg",
+      "image": "dog_leash.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "DT-009",
+      "name": "Truelove Dog Harness",
+      "description": "The Truelove Dog Harness offers comfort, control, and safety for your dog. Its no-pull design evenly distributes pressure, preventing strain on your dog’s neck. With adjustable straps and reflective details for a secure fit and better visibility, this durable harness is perfect for everyday walks and outdoor adventures.",
+      "price": 24.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "https://m.media-amazon.com/images/I/61DvFMFATmL._AC_SL1000_.jpg",
+      "image": "dog_harness.jpg"
+    }
+  }
+]
