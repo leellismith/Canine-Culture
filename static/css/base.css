@@ -56,9 +56,21 @@ body {
     border: 1px solid black !important;
 }
 
-.nav-bar-margin {
-    margin-bottom: 0px;
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
+
+.card-img-top {
+    height: 400px; /* Set desired height */
+    object-fit: contain; /* Ensures images maintain aspect ratio */
+}
+
 
 /* -------------------------------- Media Queries */
 
