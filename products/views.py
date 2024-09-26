@@ -20,7 +20,8 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey == 'lowername'
                 products = products.annotate(lower_name=Lower('name'))
-
+            if sortkey == 'category':
+                sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -58,10 +59,10 @@ def all_products(request):
 def product_detail(request, product_id):
     """ View to show single product details """
 
-    product = get.object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, 'products/product_detail.html', context)
