@@ -17,10 +17,10 @@
                 Toys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="toy-link">
-                <a href="" class="dropdown-item">Chew Toys</a>
-                <a href="" class="dropdown-item">Fetch Toys</a>
-                <a href="" class="dropdown-item">Interactive Puzzles</a>
-                <a href="" class="dropdown-item">All Toys</a>
+                <a href="{% url 'products' %}?category=chew" class="dropdown-item">Chew Toys</a>
+                <a href="{% url 'products' %}?category=fetch" class="dropdown-item">Fetch Toys</a>
+                <a href="{% url 'products' %}?category=interactive" class="dropdown-item">Interactive Puzzles</a>
+                <a href="{% url 'products' %}?category=chew%2Cfetch%2Cinteractive" class="dropdown-item">All Toys</a>
             </div>
         </li>
 
@@ -29,21 +29,22 @@
                 Training &amp; Enrichment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="training-link">
-                <a href="" class="dropdown-item">Clickers &amp; Training Whistles</a>
-                <a href="" class="dropdown-item">Treat Pouches</a>
-                <a href="" class="dropdown-item">Snuffle Mats</a>
-                <a href="" class="dropdown-item">All Training &amp; Enrichment</a>
+                <a href="{% url 'products' %}?category=clickers_whistles" class="dropdown-item">Clickers &amp; Training Whistles</a>
+                <a href="{% url 'products' %}?category=treat_pouches" class="dropdown-item">Treat Pouches</a>
+                <a href="{% url 'products' %}?category=snuffle_mats" class="dropdown-item">Snuffle Mats</a>
+                <a href="{% url 'products' %}?category=clickers_whistles%2Ctreat_pouches%2Csnuffle_mats" class="dropdown-item">All Training &amp; Enrichment</a>
             </div>
         </li>
+        
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="accessories-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dog Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item">Collars &amp; Leashes</a>
-                <a href="" class="dropdown-item">Harnesses</a>
-                <a href="" class="dropdown-item">All Dog Accessories</a>
+                <a href="{% url 'products' %}?category=collars_leashes" class="dropdown-item">Collars &amp; Leashes</a>
+                <a href="{% url 'products' %}?category=harnesses" class="dropdown-item">Harnesses</a>
+                <a href="{% url 'products' %}?category=collars_leashes%2Charnesses" class="dropdown-item">All Dog Accessories</a>
             </div>
         </li>
 
@@ -52,10 +53,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals%2Cdeals%2Cclearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
