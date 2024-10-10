@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['canine-culture-f3db279cab51.herokuapp.com', '8000-leellismith-caninecultu-4hjkj6alp6n.ws.codeinstitute-ide.net']
 CSRF_TRUSTED_ORIGINS = ['https://8000-leellismith-caninecultu-4hjkj6alp6n.ws.codeinstitute-ide.net',]
