@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
 
 if os.path.isfile('env.py'):
@@ -30,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-leellismith-caninecultu-4hjkj6alp6n.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['canine-culture-f3db279cab51.herokuapp.com', '8000-leellismith-caninecultu-4hjkj6alp6n.ws.codeinstitute-ide.net']
 CSRF_TRUSTED_ORIGINS = ['https://8000-leellismith-caninecultu-4hjkj6alp6n.ws.codeinstitute-ide.net',]
 
 
@@ -125,12 +126,17 @@ WSGI_APPLICATION = 'canine_culture.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation

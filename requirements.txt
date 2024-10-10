@@ -1,11 +1,14 @@
 asgiref==3.8.1
 crispy-bootstrap5==2024.2
+dj-database-url==2.2.0
 Django==5.1.1
 django-allauth==0.55.0
 django-countries==7.6.1
 django-crispy-forms==2.3
+gunicorn==23.0.0
 oauthlib==3.2.2
 pillow==10.4.0
+psycopg2==2.9.9
 PyJWT==2.9.0
 python3-openid==3.2.0
 pytz==2024.2

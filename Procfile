@@ -1,0 +1,1 @@
+web: gunicorn canine-culture.wsgi:application
