@@ -88,6 +88,13 @@
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
                                 <input type="submit" class="btn btn-dark rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <a href="{% url 'add_to_wishlist' product.id %}" class="btn btn-outline-dark rounded-0 mt-5">
+                                    <span class="icon">
+                                        <i class="fas fa-heart"></i>
+                                    </span>
+                                    <span class="text-uppercase">Wishlist</span>
+                                </a>
+                                
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
