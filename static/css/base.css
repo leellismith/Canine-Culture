@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: "REM", sans-serif;
 }
 
 /* from Bulma */
@@ -19,16 +19,34 @@ body {
     width: 1.5rem;
 }
 
+.nav-icons {
+    display: flex !important;
+    justify-content: flex-end;
+}
+
 .logo-font {
     text-transform: uppercase;
+}
+
+h2.logo-font.text-black.my-0 {
+    font-weight: 400;
+}
+
+.treat-text {
+    text-transform: uppercase;
+    font-weight: 100;
 }
 
 .main-logo-link {
     width: fit-content;
 }
 
+.banner-styling {
+    background-color: #e94f37 !important;
+}
+
 .shop-now-button {
-    background: black;
+    background: #e94f37;
     color: white;
     min-width: 260px;
 }
@@ -49,7 +67,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #393e41 !important;
 }
 
 .border-black {
