@@ -6,6 +6,8 @@ from django.db.models.functions import Lower
 
 from .models import Product, Category
 from .forms import ProductForm
+from reviews.models import ProductReview
+from reviews.forms import ProductReviewForm
 
 
 def all_products(request):
@@ -64,9 +66,25 @@ def product_detail(request, product_id):
     """ View to show single product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = ProductReview.objects.filter(product=product)
 
+    # Handle form submission for adding a review
+    if request.method == 'POST' and request.user.is_authenticated:
+        review_form = ProductReviewForm(request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.user = request.user
+            review.product = product
+            review.save()
+            return redirect('product_detail', product_id=product.id)
+    else:
+        review_form = ProductReviewForm()
+
+    # Include reviews and review_form in context
     context = {
         'product': product,
+        'reviews': reviews,
+        'review_form': review_form,
     }
 
     return render(request, 'products/product_detail.html', context)
