@@ -30,7 +30,7 @@ def edit_review(request, review_id):
         form = ProductReviewForm(request.POST, instance=review)
         if form.is_valid():
             form.save()
-            return redirect('product_detail', product_id=review.product.id)
+            return redirect('view_review')
     else:
         form = ProductReviewForm(instance=review)
     
@@ -43,7 +43,16 @@ def delete_review(request, review_id):
     
     if request.method == 'POST':
         review.delete()
-        return redirect('product_detail', product_id=review.product.id)
+        return redirect('view_review')
     
     return render(request, 'reviews/delete_review.html', {'review': review})
 
+
+@login_required
+def view_review(request): 
+    user_reviews = ProductReview.objects.filter(user=request.user) 
+    context = {
+        'user_reviews': user_reviews,
+    }
+
+    return render(request, 'reviews/reviews.html', context)
