@@ -44,7 +44,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                                <span class="small"><a href="{% url 'products' %}" class="product-home-link">Products Home</a> | </span>
                             {% endif %}
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
@@ -84,12 +84,16 @@
                                             {% endif %}
                                             {% if request.user.is_superuser %}
                                                 <small class="ms-3">
-                                                    <a href="{% url 'edit_product' product.id %}">Edit</a>
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                    <a href="{% url 'edit_product' product.id %}" class="btn btn-primary s-user-buttons">Edit</a>
+                                                    <a class="btn btn-danger s-user-buttons" href="{% url 'delete_product' product.id %}">Delete</a>
                                                 </small>
                                             {% endif %}
-                                            <a href="{% url 'add_to_wishlist' product.id %}">Add to Wishlist</a>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="{% url 'add_to_wishlist' product.id %}?category={{ current_categories|join:',' }}" class="btn wishlist-button btn-sm">Add to Wishlist</a>
                                     </div>
                                 </div>
                             </div>

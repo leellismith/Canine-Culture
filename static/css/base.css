@@ -76,6 +76,17 @@ textarea#id_comment {
     color: #e94f37;
 }
 
+.product-home-link {
+    color: #e94f37;
+}
+
+.s-user-buttons {
+    --bs-btn-padding-y: 0.1rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-border-radius: var(--bs-border-radius-sm);
+}
+
 .btn-black {
     background: black;
     color: white;
@@ -298,6 +309,24 @@ input[name='q']::placeholder {
 }
 
 /* wishlist */
+
+.wishlist-button {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #e94f37;
+    --bs-btn-border-color: #e94f37;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #e94f37;
+    --bs-btn-hover-border-color: #e94f37;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #e94f37;
+    --bs-btn-active-border-color: #e94f37;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #e94f37;
+    --bs-btn-disabled-border-color: #e94f37;
+    margin-left: 15px;
+}
 
 .wishlist-shopnow {
     text-align: center;

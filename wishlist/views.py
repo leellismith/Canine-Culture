@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from wishlist.models import Wishlist
 from products.models import Product
+from django.urls import reverse
 
 # Add Item to wishlist
 @login_required
@@ -17,7 +18,13 @@ def add_to_wishlist(request, product_id):
         # Item already in wishlist
         messages.info(request, f'{product.name} is already in your wishlist.')
     # Returns user to added they added item
-    return redirect(request.META.get('HTTP_REFERER', 'products'))
+    category = request.GET.get('category', None)
+
+    # Construct the redirect URL using reverse
+    if category:
+        return redirect(f"{reverse('products')}?category={category}")
+    else:
+        return redirect('products')  # Fallback if no category is found
 
 
 # Remove Item from the wishlist
