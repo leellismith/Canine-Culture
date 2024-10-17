@@ -63,8 +63,12 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
-                                            <a class="text-danger" href="{% url 'remove_from_wishlist' item.product.id %}">Remove</a>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row"></div>
+                                    <div class="col">
+                                        <a href="{% url 'remove_from_wishlist' item.product.id %}" class="btn btn-danger remove-button btn-sm">Remove</a>
                                     </div>
                                 </div>
                             </div>
