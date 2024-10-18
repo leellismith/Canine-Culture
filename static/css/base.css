@@ -45,9 +45,21 @@ h2.logo-font.text-black.my-0 {
     background-color: #e94f37 !important;
 }
 
-.shop-now-button {
-    background: #e94f37;
-    color: white;
+.shop-now-button-style {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #e94f37;
+    --bs-btn-border-color: #e94f37;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ef3c20;
+    --bs-btn-hover-border-color: #ef3c20;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #e94f37;
+    --bs-btn-active-border-color: #e94f37;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #e94f37;
+    --bs-btn-disabled-border-color: #e94f37;
     min-width: 260px;
 }
 
@@ -92,9 +104,6 @@ textarea#id_comment {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
