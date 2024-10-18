@@ -65,8 +65,7 @@
                                             {% endif %}
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row"></div>
+                                    <div class="row"></div>
                                     <div class="col">
                                         <a href="{% url 'remove_from_wishlist' item.product.id %}" class="btn btn-danger remove-button btn-sm">Remove</a>
                                     </div>
@@ -77,7 +76,7 @@
                             <div class="col-12 d-sm-none mb-5">
                                 <hr>
                             </div>
-                        {% endif %}                        
+                        {% endif %}
                         {% if forloop.counter|divisibleby:2 %}
                             <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
                                 <hr>
@@ -94,11 +93,11 @@
                             </div>
                         {% endif %}
                     {% empty %}
-                        <div class="my-5 wishlist-shopnow">
-                            <h4>
-                                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                            </h4>
-                        </div>
+                    <div class="my-5 wishlist-shopnow">
+                        <h4>
+                            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        </h4>
+                    </div>
                     {% endfor %}
                 </div>
             </div>
