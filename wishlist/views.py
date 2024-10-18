@@ -18,13 +18,7 @@ def add_to_wishlist(request, product_id):
         # Item already in wishlist
         messages.info(request, f'{product.name} is already in your wishlist.')
     # Returns user to added they added item
-    category = request.GET.get('category', None)
-
-    # Construct the redirect URL using reverse
-    if category:
-        return redirect(f"{reverse('products')}?category={category}")
-    else:
-        return redirect('products')  # Fallback if no category is found
+    return redirect('products')
 
 
 # Remove Item from the wishlist
