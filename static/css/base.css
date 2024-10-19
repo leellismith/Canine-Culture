@@ -157,6 +157,16 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.image-bag-size {
+    height: 35vh !important;
+    object-fit: contain;
+}
+
+.toast-image-size {
+    max-height: 10vh !important;
+    object-fit: contain;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
