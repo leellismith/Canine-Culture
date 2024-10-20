@@ -107,7 +107,9 @@ The Colour Scheme will include of HEX colours -
 
 ![Home Page Validation]()
 
+## __JS Hint__
 
+#### After testing with JS Hint there were no major issues found.
 
 # Test Cases
 
@@ -128,7 +130,7 @@ The Colour Scheme will include of HEX colours -
 # Deployment
 
 ## Heroku Deployment
-[Heroku](https://dashboard.heroku.com/) was used for The MovieMeter project. Heroku is a cloud platform that allows developers to build, run, and operate applications entirely in the cloud.
+[Heroku](https://dashboard.heroku.com/) was used for The Canine Culture project. Heroku is a cloud platform that allows developers to build, run, and operate applications entirely in the cloud.
 
 To deploy your own, follow these steps -
 

@@ -5,7 +5,7 @@
         var currentValue = parseInt($input.val()) || 0;  // Safeguard against NaN
         $(`#decrement-qty_${itemId}`).prop('disabled', currentValue < 2);
         $(`#increment-qty_${itemId}`).prop('disabled', currentValue > 98);
-    }
+    };
 
     // Ensure proper enabling/disabling of all inputs on page load
     var allQtyInputs = $('.qty_input');
