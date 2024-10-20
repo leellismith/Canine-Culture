@@ -4,9 +4,9 @@
 
 <h2 align="center">Milestone Project 4 - Lee Smith</h2>
 
-![Am I Responsive Image]()
+![Am I Responsive Image](readme-docs/testing/amiresponsive.PNG)
 
-## <p align='center'>[Canine Culture Live Site]()
+## <p align='center'>[Canine Culture Live Site](https://canine-culture-f3db279cab51.herokuapp.com/)
 
 ## <p align='center'>[Canine Culture Repository](https://github.com/leellismith/Canine-Culture)
 
@@ -95,21 +95,109 @@ The Colour Scheme will include of HEX colours -
 
 #### __Home Page__
 
-![Site Validation]()
+![Home Validation](readme-docs/testing/W3%20Home.PNG)
+
+#### __Login Page__
+
+![Login Validation](readme-docs/testing/W3%20Login.PNG)
+
+#### __Profile Page__
+
+![Profile Validation](readme-docs/testing/W3%20Profile.PNG)
+
+#### __Reviews Page__
+
+![Reviews Validation](readme-docs/testing/W3%20Reviews.PNG)
+
+#### __Wishlist Page__
+
+![Wishlist Validation](readme-docs/testing/W3%20Wishlist.PNG)
+
+#### __Bag Page__
+
+![Bag Validation](readme-docs/testing/W3%20Bag.PNG)
+
+#### __Products Page__
+
+![Products Validation](readme-docs/testing/W3%20Products.PNG)
+
+#### __Add Products Page__
+
+![Add Products Validation](readme-docs/testing/W3%20Add%20Products.PNG)
+
+#### __Edit Products Page__
+
+![Edit Products Validation](readme-docs/testing/W3%20Edit%20Products.PNG)
 
 #### __CSS Validation__
 
-![CSS Validation]()
+![CSS Validation](readme-docs/testing/CSS%20Validation.PNG)
 
 ## __Lighthouse Testing__
 
 #### __Home Page__
 
-![Home Page Validation]()
+![Home Page Validation](readme-docs/testing/Lighthouse%20home.PNG)
+
+#### __Profile Page__
+
+![Profile Validation](readme-docs/testing/lighthouse%20profile.PNG)
+
+#### __Reviews Page__
+
+![Reviews Validation](readme-docs/testing/lighthouse%20reviews.PNG)
+
+#### __Wishlist Page__
+
+![Wishlist Validation](readme-docs/testing/lighthouse%20wishlist.PNG)
+
+#### __Bag Page__
+
+![Bag Validation](readme-docs/testing/Lighthouse%20Bag.PNG)
+
+#### __Products Page__
+
+![Products Validation](readme-docs/testing/lighthouse%20product%20view.PNG)
+
+#### __Add Products Page__
+
+![Add Products Validation](readme-docs/testing/Lighthouse%20Add%20Products.PNG)
+
+#### __Edit Products Page__
+
+![Edit Products Validation](readme-docs/testing/W3%20Edit%20Products.PNG)
 
 ## __JS Hint__
 
+![JS Hint Validation](readme-docs/testing/JS%20Hint.PNG)
 #### After testing with JS Hint there were no major issues found.
+
+## __CI Python Linter Testing__
+
+#### __Profile Page__
+
+![Profile Validation](readme-docs/testing/CI%20Python%20Profiles.PNG)
+
+#### __Reviews Page__
+
+![Reviews Validation](readme-docs/testing/CI%20Python%20Reviews.PNG)
+
+#### __Wishlist Page__
+
+![Wishlist Validation](readme-docs/testing/CI%20Python%20Wishlist.PNG)
+
+#### __Bag Page__
+
+![Bag Validation](readme-docs/testing/CI%20Python%20Bag.PNG)
+
+#### __Products Page__
+
+![Products Validation](readme-docs/testing/CI%20Python%20Products.PNG)
+
+#### __Checkout Page__
+
+![Checkout Validation](readme-docs/testing/Ci%20Python%20Checkout.PNG)
+
 
 # Test Cases
 
