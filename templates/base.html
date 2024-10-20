@@ -7,6 +7,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
+        <meta name="description" content="Canine Culture offers a wide range of premium dog toys and accessories for all breeds. Discover the perfect toys to keep your furry friends happy, active, and entertained.">
+        <meta name="keywords" content="dog toys, dog accessories, dog products, pet toys, Canine Culture, dog play, dog treats, premium dog toys">
+        <meta name="author" content="Lee Smith">
     {% endblock %}
 
     {% block extra_meta %}
@@ -53,7 +56,7 @@
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-                        <button class="btn btn-black border border-black rounded-0" type="submit">
+                        <button class="btn btn-dark border border-black rounded-0" type="submit" aria-label="Search">
                             <span class="icon">
                                 <i class="fas fa-search"></i>
                             </span>
@@ -159,9 +162,11 @@
     {% block postloadjs %}
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                var toastElement = document.querySelector('.toast');
-                var toast = new bootstrap.Toast(toastElement);
-                toast.show();
+                var toastElements = document.querySelectorAll('.toast');
+                toastElements.forEach(function(toastElement) {
+                    var toast = new bootstrap.Toast(toastElement);
+                    toast.show();
+                });
             });
         </script>
     {% endblock %}
