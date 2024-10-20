@@ -119,13 +119,10 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     {% include 'includes/mobile-top-header.html' %}
-                        <div class="collapse navbar-collapse" id="main-nav">
                     {% include 'includes/main-nav.html' %}
-                    </div>
                 </div>
             </nav>
         </div>
-        
         <div id="delivery-banner" class="row">
             <div class="col bg-black text-white text-center banner-styling">
                 <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>                
@@ -160,7 +157,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-        <script type="text/javascript">
+        <script>
             document.addEventListener('DOMContentLoaded', function() {
                 var toastElement = document.querySelector('.toast');
                 var toast = new bootstrap.Toast(toastElement);
