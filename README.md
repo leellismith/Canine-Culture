@@ -1,6 +1,6 @@
 <h1 align="center">Canine Culture</h1>
 
-<h2 align="center"> A Dog Toy Site</h2>
+<h2 align="center"> A Dog Store Site</h2>
 
 <h2 align="center">Milestone Project 4 - Lee Smith</h2>
 
@@ -16,7 +16,43 @@
 
 # User Stories
 
-* 
+#### __User Story: Online Dog Store__
+
+As a User (Customer),
+I want to easily browse and purchase toys for my dog from a wide selection of high-quality, fun, and safe products.So that I can keep my pets entertained and happy, while enjoying a seamless online shopping experience.
+Acceptance Criteria:
+1. I can search for toys by category (type of toy, lead,  harness, Clickers & 
+ Whistles, Treat Pouches etc).
+2. I can view detailed product descriptions, images, prices, and reviews.
+3. I can filter and sort products based on popularity, price, or user rating.
+4. I can securely add products to my cart, checkout, and select delivery options.
+5. I can remove products from my cart.
+6. I can update the products in my cart.
+7. I can remove products in my cart.
+8. I can register an account and received a confirmation email.
+9. I can log in and out of my account.
+10. I can add my personal details to my account to make the checkout easier.
+11. I can update my personal details.
+12. I can see all my orders whilst I’m logged in.
+13. I can be sure that my payment info is secure.
+14. I can see how much my total will be.
+15. I can see how much the delivery will be.
+16. I can added items to a wishlist.
+17. I can remove items from my wishlist.
+18. I can add a review on a item.
+19. I can view all my reviews.
+20. I can Edit any of my reviews.
+21. I can delete any of my reviews.
+
+As the website admin and seller
+I want to easily upload and manage my inventory of dog items, track orders, and update product information. So that I can efficiently sell and promote my products on the Website.
+Acceptance Criteria:
+1. I can add new products with images, descriptions, prices.
+2. I can update product details in real time.
+3. I can delete products in real time. 
+4. I can monitor customer reviews and delete if they are inappropriate.
+5. I can monitor customer service interactions for quality assurance.
+6. I can manage user disputes and issue refunds when necessary.
 
 ## Steps to be taken
 
@@ -34,26 +70,50 @@
 # Features
 
 * __Background Image__
-    > 
+    > The background image was selected as the colour and theme of the image would fit in with the design. 
 
 * __Search Bar__
-    > 
+    > The Search bar is included in the NavBar to give the user a easy search function to be able to find what they are looking for.
 
-* __Carousel__
-    > 
+* __Products Page__
+    > The user has category options to find a item. Once selected it will be opened up in to a update to date products page where the user can see the image, name, price, category and rating with a nice Add to wishlist button. 
+    
+    > Once the user clicks on a item, they would go through to the products detail page where there will be again the image, name, price, category and rating but with a fun description. This is where the user can add to the bag and select the quantity, add to wishlist or just keep shopping.
+
+    > This is also where a login user can add a review to the site with a Rating and a comment and to be able to see a the reviews next to it.
+
+    > On these pages the Owner/Admin will be able to Edit or Delete products.
+
+* __Shopping Bag Page__
+    > When the user wants to check out the bag, they will be able to click the bag icon in the top right on the page, this will navigate the use to the Shopping bag where they will be able to view the bag update the quantity which will update the pricing automatically. The user can also remove any unwanted items from the bag at this point.
+
+
+* __Checkout Page__
+    > When the user clicks the secure checkout button on the shopping bag page they will be sent to the checkout page. On this page the user will be able to see a Order summary with the order total, delivery and grand total.
+
+    > The user will have to complete the form with the Full Name, Email Address and delivery address.
+
+    > The next part is where the user will add the payment information and then click the complete order button which will use stripe secure payment service.
+
+* __Wishlist Page__
+    > If the user has added items to the wishlist, they will be able to view this page by clicking on the icon in the top right of the navbar. On this page the user will be able to view the item as viewed in the products page. with the option to remove the item if it's not needed no more.
 
 * __Reviews page__
-    > 
+    > Once the user has added a review in the product details page, the user will be able to view all thier reviews if they click of my account in the navbar and click on my reviews. Here the user can see all the review they have made with the option to edit the review or delete the review.
 
 * __Profile Page__
-    > 
+    > The Profile page is basic but has good uses, this is where the user can update the default delivery information in need and can also view the order history of what they have bought.
 
-* __Add Review Page__
-    > 
+* __Order Information__
+    > When the user clicks on a order in order history they will be able to view all the order information from that order.
 
-* __Manage Revie Page__
-    > 
+* __Add Products Page__
+    > When the Site Worker/Admin wants to add a product they will be able to do this with ease through the sites Product Management link found in the My Account icon.
 
+    > Here is where you will be able to select the category of the item, give it a SKU number, name, description, price, Rated(if needed) and add the image url and or add a image file.
+
+* __Edit Products Page__
+    > The site worker/admin can also edit any detail of a product either by search or going in to the category links. Here is where you can amend any of the information as stated in the Add Products page.
 
 
 ## Future Features
