@@ -1,38 +1,36 @@
 <script>
-    // Disable +/- buttons outside 1-99 range
-    function handleEnableDisable(itemId) {
-        var $input = $(`#id_qty_${itemId}`);
-        var currentValue = parseInt($input.val()) || 0;  // Safeguard against NaN
-        $(`#decrement-qty_${itemId}`).prop('disabled', currentValue < 2);
-        $(`#increment-qty_${itemId}`).prop('disabled', currentValue > 98);
-    };
+    $(document).ready(function () {
+        // Disable +/- buttons outside 1-99 range
+        function handleEnableDisable($input) {
+            var currentValue = parseInt($input.val()) || 0;  // Safeguard against NaN
+            $input.siblings('.decrement-qty').prop('disabled', currentValue < 2);
+            $input.siblings('.increment-qty').prop('disabled', currentValue > 98);
+        };
 
-    // Ensure proper enabling/disabling of all inputs on page load
-    var allQtyInputs = $('.qty_input');
-    allQtyInputs.each(function() {
-        var itemId = $(this).data('item_id');
-        handleEnableDisable(itemId);
-    });
+        // Ensure proper enabling/disabling of all inputs on page load
+        $('.qty_input').each(function() {
+            handleEnableDisable($(this));
+        });
 
-    // Check enable/disable every time the input is changed
-    allQtyInputs.on('change', function() {
-        var itemId = $(this).data('item_id');
-        handleEnableDisable(itemId);
-    });
+        // Check enable/disable every time the input is changed
+        $(document).on('change', '.qty_input', function() {
+            handleEnableDisable($(this));
+        });
 
-    // Increment quantity
-    $('.increment-qty').on('click', function(e) {
-        e.preventDefault();
-        var $closestInput = $(this).closest('.input-group').find('.qty_input');
-        var currentValue = parseInt($closestInput.val()) || 0;
-        $closestInput.val(currentValue + 1).trigger('change');
-    });
+        // Increment quantity
+        $(document).on('click', '.increment-qty', function(e) {
+            e.preventDefault();
+            var $input = $(this).siblings('.qty_input');
+            var currentValue = parseInt($input.val()) || 0;
+            $input.val(currentValue + 1).trigger('change');
+        });
 
-    // Decrement quantity
-    $('.decrement-qty').on('click', function(e) {
-        e.preventDefault();
-        var $closestInput = $(this).closest('.input-group').find('.qty_input');
-        var currentValue = parseInt($closestInput.val()) || 0;
-        $closestInput.val(currentValue - 1).trigger('change');
+        // Decrement quantity
+        $(document).on('click', '.decrement-qty', function(e) {
+            e.preventDefault();
+            var $input = $(this).siblings('.qty_input');
+            var currentValue = parseInt($input.val()) || 0;
+            $input.val(currentValue - 1).trigger('change');
+        });
     });
 </script>

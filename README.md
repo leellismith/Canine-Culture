@@ -295,7 +295,7 @@ The Colour Scheme will include of HEX colours -
 | Users | Results | Fixed Issues |
 |--- |--- |--- |
 | First User | User found issue with styling when testing on mobile within the nav dropdown  | Issue fixed by adding the correct styling names |
-| Second User | | |
+| Second User | User found bug where the minus button and plus button didn't disable in the bag | Fix issue by changing the id atttributes for the quantity input and buttons to class |
 | Third User | | |
 | Fourth User | | |
 | Fifth User | | |
