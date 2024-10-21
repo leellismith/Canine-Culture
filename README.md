@@ -290,6 +290,75 @@ The Colour Scheme will include of HEX colours -
 
 ![Checkout Validation](readme-docs/testing/Ci%20Python%20Checkout.PNG)
 
+
+# Data Schema
+
+#### Product Schema
+
+| Column Name | Data Type | Description |
+|--- |--- |--- |
+| sku | String (PK) | Stock Keeping Unit, unique identifier for each product.|
+| name | String | Name of the product. |
+| category | String (FK) | Category identifier (e.g., toys, accessories). |
+| price | Decimal | Cost of the product (e.g., 19.99). |
+| rating | Decimal | Average rating of the product (e.g., 4.5). |
+| description | Text | Detailed description of the product. |
+| image | String | URL path to the product image. |
+
+#### User Schema
+
+| Column Name | Data Type | Description |
+|--- |--- |--- |
+| username | String | Username of the user. |
+| email | String | User's email address. |
+| password | String | Hashed password for user authentication. |
+| is_staff | Boolean | Indicates if the user has admin/staff privileges. |
+| is_active | Boolean | Indicates if the user account is active. |
+| is_superuser | Boolean | Indicates if the user has superuser privileges. |
+| date_joined | DateTime | Date when the user registered. |
+
+#### Email Schema 
+
+| Column Name | Data Type | Description |
+|--- |--- |--- |
+| email | String | User's email address. |
+| user_id | Integer (FK) | Reference to the user who owns this email address. |
+| verified | Boolean | Indicates if the email address has been verified. |
+| primary | Boolean | Indicates if this is the user's primary email address. |
+
+#### Order Schema
+
+| Column Name | Data Type | Description |
+|--- |--- |--- |
+| order_number | String (PK) | Unique identifier for each order. |
+| user_profile | Integer (FK) | Reference to the user who placed the order. |
+| date | DateTime | Timestamp when the order was created. |
+| full_name | String | Full name of the recipient. |
+| email | String | Email address of the recipient. |
+| phone_number | String | Phone number of the recipient. |
+| country | String | Country for delivery |
+| postcode | String | Postcode/ZIP for delivery. |
+| town_or_city | String | Town or city for delivery. |
+| street_address1 | String | Primary street address for delivery. |
+| street_address2 | String | Secondary street address (optional). |
+| county | String | County/State for delivery. |
+| delivery_cost | Decimal | Cost of shipping/delivery. |
+| order_total | Decimal | Total cost of the items in the order. |
+| grand_total | Decimal | Total cost including delivery |
+| original_bag | Text | JSON or serialized data of the original shopping bag. |
+| stripe_pid | String | Stripe Payment Intent ID associated with the order. |
+
+#### Review Schema
+
+| Column Name | Data Type | Description |
+|--- |--- |--- |
+| id | Integer (PK) | Unique identifier for each review. |
+| user | Integer (FK) | Reference to the user who wrote the review. |
+| product | Integer (FK) | Reference to the product being reviewed. |
+| rating | String | Numeric rating given by the user (e.g., 1 to 5). |
+| comment | String | Textual feedback or comment about the product. |
+| date_created | String | Timestamp when the review was submitted. |
+
 # User Testing
 
 | Users | Results | Fixed Issues |
@@ -297,8 +366,8 @@ The Colour Scheme will include of HEX colours -
 | First User | User found issue with styling when testing on mobile within the nav dropdown  | Issue fixed by adding the correct styling names |
 | Second User | User found bug where the minus button and plus button didn't disable in the bag | Fix issue by changing the id atttributes for the quantity input and buttons to class |
 | Third User | | |
-| Fourth User | | |
-| Fifth User | | |
+| Fourth User | No Issues Found | N/A |
+| Fifth User | No Issues Found | N/A |
 
 # Manual Testing
 
