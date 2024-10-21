@@ -367,7 +367,7 @@ You will find below a list of Data schema's which will show you how data is stor
 |--- |--- |--- |
 | First User | User found issue with styling when testing on mobile within the nav dropdown  | Issue fixed by adding the correct styling names |
 | Second User | User found bug where the minus button and plus button didn't disable in the bag | Fix issue by changing the id atttributes for the quantity input and buttons to class |
-| Third User | | |
+| Third User | No Issues Found | N/A |
 | Fourth User | No Issues Found | N/A |
 | Fifth User | No Issues Found | N/A |
 
