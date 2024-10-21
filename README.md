@@ -67,7 +67,7 @@ Acceptance Criteria:
 8. Test website.
 9. Deploy Website.
 
-# Features
+# Features and User Experience
 
 * __Background Image__
     > The background image was selected as the colour and theme of the image would fit in with the design. 
@@ -254,11 +254,8 @@ The Colour Scheme will include of HEX colours -
 
 ![Add Products Validation](readme-docs/testing/Lighthouse%20Add%20Products.PNG)
 
-#### __Edit Products Page__
 
-![Edit Products Validation](readme-docs/testing/W3%20Edit%20Products.PNG)
-
-As you can see that all the LightHouse Testing that the best practices test is always at 78. I couldn't work at the cause as when looking in to it, the general issue is Uses third-party cookies.
+* As you can see that all the LightHouse Testing that the best practices test is always at 78. I couldn't work at the cause as when looking in to it, the general issue is Uses third-party cookies.
 
 ![Best Practice General](readme-docs/testing/Best%20Practice.PNG)
 
@@ -293,18 +290,55 @@ As you can see that all the LightHouse Testing that the best practices test is a
 
 ![Checkout Validation](readme-docs/testing/Ci%20Python%20Checkout.PNG)
 
-
-# Test Cases
-
-## User Experience 
-
-### __Home 
-
-
 # User Testing
 
+| Users | Results | Fixed Issues |
+|--- |--- |--- |
+| First User | User found issue with styling when testing on mobile within the nav dropdown  | Issue fixed by adding the correct styling names |
+| Second User | | |
+| Third User | | |
+| Fourth User | | |
+| Fifth User | | |
 
 # Manual Testing
+
+#### General Usability Test
+
+* All Navgation links work correctly across devices and screen sizes.
+* Responsiveness tested across mobile, tablet desktop to make sure everything scales and looks good.
+
+#### User Authentication Test
+
+* Testing Login/sign to ensure users can create accounts log in and out without issues with email verification.
+* Email verification tested and works correctly.
+
+#### Shopping Process Test
+
+* Tested the Product seach and filter feature was working as expected.
+* All product images, description and prices are accurate.
+* Add to bag tested by added, removing and updating the items in the bag.
+* Wishlist tested by adding and removing items from the wishlist page.
+
+#### Checkout Process Test
+
+* Tested that the billing and shipping forms are validated and tested with valid and invalid data.
+* Tested Stripe with various test cards and also ensure webhooks worked also.
+* Tested that the order confirmation were confirmed and also the correct data was store for users to be able to view.
+
+#### Product Reviews
+
+* Testing products reviews by adding, editing and deleting reviews and also made sure only authorised users can edit/delete reviews. Included admin in the django admin.
+
+#### Profile Test
+
+* Tested that users can update their delivery address with no issues.
+* Tested that users can view previous orders with full order details.
+
+#### Admin Add/Edit/Delete Products
+
+* Tested that superusers are able to add a product without any issues.
+* Tested that superusers are able to edit a product without any issues.
+* Tested that superusers are able to delete a product without any issues.
 
 # Fixed Bugs
 
