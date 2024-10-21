@@ -118,13 +118,29 @@ Acceptance Criteria:
 
 ## Future Features
 
-* 
+* Pet Profiles - Allows customers to created a profile for their dog with information like age, size.
+
+* Wishlist Sharing - Allows users to share wishlist with friends or family.
+
+* Loyalty points program - Users can earn point for purchases to be able to redeem on the next order or save them up.
+
+* User Content - To have a page where users can upload video/picture of the pet enjoying the product.
+
+* Impoved Review system - Where the user can upload a image to the review.
+
+* Checkout Add-on - Show related or complementary prodicts for the user to add before checkout.
 
 # Typography and Color Scheme
 
+The Typography used -
+
+* Font Family - REM
+
 The Colour Scheme will include of HEX colours -
 
-* 
+* `#e94f37 - Orange`
+* `#fff - White`
+* `#3a3e41 - Dark Grey`
 
 
 # Wireframes
@@ -145,7 +161,22 @@ The Colour Scheme will include of HEX colours -
 ![Desktop Wireframe]()
 
 # Technology
-* 
+* __HTML__
+* __CSS__
+* __Python__
+* __JavaScript__
+* __jquery__
+* __Bootstrap__
+* __Django__
+* __Stripe__
+* __AWS__
+* __Heroku__
+* __Font Awesome__
+* __Google Fonts__
+* __Git__
+* __GitHub__
+* __Figma__
+* __favicon__
 
 # Testing
 
@@ -227,6 +258,10 @@ The Colour Scheme will include of HEX colours -
 
 ![Edit Products Validation](readme-docs/testing/W3%20Edit%20Products.PNG)
 
+As you can see that all the LightHouse Testing that the best practices test is always at 78. I couldn't work at the cause as when looking in to it, the general issue is Uses third-party cookies.
+
+![Best Practice General](readme-docs/testing/Best%20Practice.PNG)
+
 ## __JS Hint__
 
 ![JS Hint Validation](readme-docs/testing/JS%20Hint.PNG)
@@ -273,7 +308,30 @@ The Colour Scheme will include of HEX colours -
 
 # Fixed Bugs
 
+* Had issue with the automatic email being sent out but was was showing the sender at example.com. after a while of fixing and researching I found that the site names in Django were not set to the automatic email didn't know what to put in the infills. After added the correct name and testing again it all was fine.
+
+* The was a bug with the wishlist redirect on the product page where I wanted the wishlist button to be able to redirect the user back to the page they were on but everytime you would click on wishlist and then login the product page would show 0 products. After multiple attemps of getting this to work, I decided to just redirect the user back to the products page instead of being specific. This fixed the issue but the user does lose where they were on the site. 
+
+* I had a 404 webmanifest error popping up in the console and after about an hour of dedugging and research, I found the issue can from favicon link tags that were supplied on the site had a webmanifest link but I was able to remove this link from the corecss and still have the favicons work.
+
+
+
 ### Supported Screens and Browsers
+
+| Screens | Supported |
+|---|---|
+| Phone | Yes
+| Tablet | Yes |
+| Laptop | Yes |
+| Desktop | Yes |
+---
+Browsers | Supported|
+|---| ---|
+| Google Chrome | Yes |
+| Safari | Yes |
+| Firefox | Yes |
+| Mircosoft Edge | Yes |
+---
 
 # Deployment
 
@@ -352,4 +410,14 @@ ___
 
  # Credits
 
-### Acknowledgements
+ To start the project I followed through the Boutique Ado Project created by [Code Institute](https://codeinstitute.net/).
+
+ Background image was found and used from [freepik.com](https://www.freepik.com/free-photo/thoughtful-attentive-dog-wearing-red-bow-close-up-shot-isolated-white_11829594.htm#from_view=detail_alsolike).
+
+ When creating my wishlist model I took inspiration from a video called [Add Product to Wishlist](https://www.youtube.com/watch?v=pdttUeJi7j8).
+
+ Also took inspiration when creating the review model from [Review and Rating in Django](https://www.youtube.com/watch?v=reFJ9hBLFUY&t=167s).
+
+[Bootstrap](https://getbootstrap.com/) was used throughout my site.
+
+All Items found on site where taken from [Amazon](https://www.amazon.co.uk/).
