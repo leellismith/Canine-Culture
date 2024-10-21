@@ -293,6 +293,8 @@ The Colour Scheme will include of HEX colours -
 
 # Data Schema
 
+You will find below a list of Data schema's which will show you how data is stored.
+
 #### Product Schema
 
 | Column Name | Data Type | Description |
@@ -443,9 +445,9 @@ Browsers | Supported|
 
 To deploy your own, follow these steps -
 
->1. Select __New__ in the top-right corner of your Heroku Dashboard, and select __Create new app__ from the dropdown menu.
->2. Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select __Create App__.
->3. From the new app __Settings__, click __Reveal Config Vars__, and set your environment variables.
+1. Select __New__ in the top-right corner of your Heroku Dashboard, and select __Create new app__ from the dropdown menu.
+2. Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select __Create App__.
+3. From the new app __Settings__, click __Reveal Config Vars__, and set your environment variables.
 
 | Key | Value |
 | --- | --- |
@@ -456,32 +458,32 @@ To deploy your own, follow these steps -
 | `PORT` | 5000 |
 | `SECRET_KEY` | user's own value |
 
->4. Heroku needs two additional files in order to deploy properly.
+4. Heroku needs two additional files in order to deploy properly.
 - requirements.txt
 - Procfile
 
->5. You can install this project's __requirements__ (where applicable) using:
+5. You can install this project's __requirements__ (where applicable) using:
 
 - `pip3 install -r requirements.txt`
 
->6. If you have your own packages that have been installed, then the requirements file needs updated using:
+6. If you have your own packages that have been installed, then the requirements file needs updated using:
 
 - `pip3 freeze --local > requirements.txt`
 
->7. The **Procfile** can be created with the following command:
+7. The **Procfile** can be created with the following command:
 
 - `echo web: python app.py > Procfile`
 - *replace __app.py__ with the name of your primary Flask app name; the one at the root-level*
 
 NOTE: The Procfile uses a capital P and doesn't have a file extension on the end.
 
->8. For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+8. For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
 
 Either:
 
 - Select __Automatic Deployment__ from the Heroku app.
 
->9. Or:
+9. Or:
 
 - In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
 - Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
