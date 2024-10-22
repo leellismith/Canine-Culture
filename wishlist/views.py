@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from wishlist.models import Wishlist
 from products.models import Product
-from django.urls import reverse
 
 
 # Add Item to wishlist

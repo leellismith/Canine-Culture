@@ -21,7 +21,6 @@ if os.path.isfile('env.py'):
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -31,8 +30,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['canine-culture-f3db279cab51.herokuapp.com', '8000-leellismith-caninecultu-4hjkj6alp6n.ws.codeinstitute-ide.net']
-CSRF_TRUSTED_ORIGINS = ['https://8000-leellismith-caninecultu-4hjkj6alp6n.ws.codeinstitute-ide.net',]
+ALLOWED_HOSTS = [
+    'canine-culture-f3db279cab51.herokuapp.com',
+    '8000-leellismith-caninecultu-4hjkj6alp6n.ws.codeinstitute-ide.net',
+]
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-leellismith-caninecultu-4hjkj6alp6n.ws.codeinstitute-ide.net',
+]
 
 
 # Application definition
@@ -91,7 +95,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # `allauth` needs this from django
+                'django.template.context_processors.request', 
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -251,7 +255,10 @@ else:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER') or 'no-reply@canineculture.com'
+    DEFAULT_FROM_EMAIL = (
+        os.environ.get('EMAIL_HOST_USER')
+        or 'no-reply@canineculture.com'
+    )
 
 
 # Default primary key field type

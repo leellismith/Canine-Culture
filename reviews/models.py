@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class ProductReview(models.Model):
 
     RATING_CHOICE = [
@@ -19,4 +20,7 @@ class ProductReview(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.product.name} - {self.rating} Stars by {self.user.username}"
+        return (
+            f"{self.product.name} - {self.rating} Stars by "
+            f"{self.user.username}"
+        )
