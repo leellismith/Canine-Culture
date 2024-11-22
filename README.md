@@ -416,6 +416,7 @@ You will find below a list of Data schema's which will show you how data is stor
 
 * I had a 404 webmanifest error popping up in the console and after about an hour of dedugging and research, I found the issue can from favicon link tags that were supplied on the site had a webmanifest link but I was able to remove this link from the corecss and still have the favicons work.
 
+* I had a bug where only authenticated user were able to checkout on the site and when anonymous users tried to place a order on the site would return error 500. I noticed that in my Checkout/views.py at the def checkout, the code was always trying to save the order to a profile. After some researching on the error code and searching on stackoverflow. I found if I put "if request.user.is_authenticated" line starting above the profile and ending in user_profile_form.save() in a if statement I would be able to check if the user has a profile or is a guest checking out. If a guest then tries to order it will skip the code to add the order to a profile but still enables a authenticated users to add orders to profile.
 
 
 ### Supported Screens and Browsers
